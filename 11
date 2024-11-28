@@ -1,0 +1,6 @@
+import requests
+from pprint import pprint
+username='kubernetes'
+url=f"https://habr.com/ru/post/453444/{username}"
+user_data=requests.get(url).json(6)
+print()
