@@ -20,6 +20,16 @@ try:
 #если число некккоректно
 except TypeError :
     print('!!!ОШИБКА!!!')
+#12
+#блок б №1
+def max_number():
+    n = int(input("Введите число: "))
+    if n == 0:
+        return 0
+    max_in_rest = max_number()
+    return max(n, max_in_rest)
+
+print("Наибольшее число в последовательности:", max_number())
 
 
 
